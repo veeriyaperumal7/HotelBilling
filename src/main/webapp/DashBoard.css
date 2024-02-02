@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(#003b95, #012863);
+    margin: 0;
+}
+
+#navBlock {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #fbf8f8;
+    color: #d30707;
+    height: 50px;
+}
+
+#navBlock article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.userBlock {
+    display: flex;
+    align-items: center;
+}
+
+.usericonimage {
+    width: 30px; /* Adjust the width as needed */
+    height: 30px; /* Adjust the height as needed */
+    margin-right: 10px;
+}
+
+.UserName {
+    align-items: start;
+    color: #ff0000;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.menuBlock ul {
+    list-style: none;
+    display: flex;
+}
+
+.menuBlock ul li {
+    margin-right: 20px;
+}
+
+.menuBlock ul li a {
+    text-decoration: none;
+    color: #f70303;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+.menuBlock ul li a:hover {
+    color: #ff0000;
+}

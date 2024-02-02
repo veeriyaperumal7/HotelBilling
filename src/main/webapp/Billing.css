@@ -1,0 +1,360 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100vw;
+	min-height: 100vh;
+	margin: 0;
+}
+
+#navBlock {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	background: linear-gradient(#c6e4dc, #7ba2dc);
+	color: #d30707;
+	height: 50px;
+}
+
+#navBlock article {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+}
+
+.tr {
+	width: 10;
+}
+
+.userBlock {
+	display: flex;
+	align-items: center;
+}
+
+.BillingTableHeaderSection {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+
+#BillNumberDiv,
+#BillDateDiv {
+	padding: 10px;
+	background-color: #333;
+	color: white;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+#BillNumberValue {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+#BillDateValue {
+	font-size: 18px;
+}
+
+.usericonimage {
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+}
+
+.UserName {
+	align-items: start;
+	color: #ff0000;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.menuBlock ul {
+	list-style: none;
+	display: flex;
+}
+
+.menuBlock ul li {
+	margin-right: 20px;
+}
+
+.menuBlock ul li a {
+	text-decoration: none;
+	color: #f70303;
+	font-weight: bold;
+	font-size: 16px;
+	transition: color 0.3s ease-in-out;
+}
+
+.menuBlock ul li a:hover {
+	color: #ff0000;
+}
+
+.Container {
+	display: flex;
+	height: 100%;
+	width: 100%;
+}
+
+.billing {
+	height: 100vh;
+	width: 50%;
+}
+
+.BillingArea {
+	border: solid 2px black;
+	background-color: white;
+	height: 300px;
+	width: 100%;
+	overflow: auto;
+}
+
+.BillingControlsArea {
+	height: calc(100vh-300px);
+}
+
+.BillData {
+	width: 100%;
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
+	border: solid 2px black;
+}
+
+#TotalText {
+	font-size: 36px;
+	color: black;
+	font-weight: bold;
+}
+
+#TotalAmount {
+	font-size: 36px;
+	color: red;
+	font-weight: bold;
+}
+
+.PaymentType {
+	margin-top: 25px;
+	width: 100%;
+	height: 40px;
+}
+
+/* Style the dropdown */
+select {
+	width: 200px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	font-size: 14px;
+}
+
+label {
+	/* Style for payment type label */
+	font-weight: bold;
+}
+
+option[disabled] {
+	color: #999;
+}
+
+/* Style for the mandatory asterisk */
+label[for="paymentType"]:before {
+	content: "*";
+	color: #ff0000;
+	margin-right: 4px;
+}
+
+.PaymentContainer {
+	padding-left: 435px;
+}
+
+.BillingButtons {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 40px;
+}
+
+.BillButtons {
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+	border: none;
+	border-radius: 4px;
+	color: #fff;
+}
+
+#Submit {
+	background-color: #4caf50;
+}
+
+#Clear {
+	background-color: #f44336;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+
+
+/*.BillingTable {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    position: sticky;
+}*/
+
+.BillingTableRow {
+	position: fixed;
+	width: 56%;
+	background: transparent;
+	z-index: 10;
+}
+
+.BillingTableHeader {
+	border: 1px solid black;
+	height: 40px;
+	background-color: #333;
+	color: #fff;
+}
+
+th,
+td {
+	padding: 10px;
+}
+
+th {
+	position: sticky;
+	top: 0;
+}
+
+/* td:nth-child(1),
+th:nth-child(1) {
+    width: 25px;
+}
+
+td:nth-child(2),
+th:nth-child(2) {
+    width: 200px;
+}
+
+td:nth-child(3),
+th:nth-child(3) {
+    width: 100px;
+}
+
+td:nth-child(4),
+th:nth-child(4) {
+    width: 150px;
+} */
+
+.Cell3Data {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+
+.Cell4Data {
+	display: flex;
+	justify-content: space-between;
+	gap: 10px;
+}
+
+
+.RemoveItemButton {
+	color: red;
+	width: 20px;
+	aspect-ratio: 1/1;
+	border-radius: 50%;
+	border: none;
+	cursor: pointer;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.DishArea {
+	height: 100vh;
+	width: 50%;
+	background-color: #e4f1f8;
+	padding-left: 20px;
+}
+
+.userinputfield {
+	margin-top: 70px;
+	margin-left: 40%;
+	width: 50%;
+}
+
+.userinputfield input {
+	width: 150px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.label {
+	pointer-events: none;
+	align-self: center;
+	color: #777;
+}
+
+.DishGrid {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+.dishItem {
+	margin-top: 20px;
+	text-align: center;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	padding: 15px;
+	width: 100px;
+	height: 150px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+
+.dishImage {
+	width: 75px;
+	height: 75px;
+}
+
+.dishName {
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.dishPrice {
+	color: #f80505;
+}
+
+.QuantityInputBox {
+	width: 25px;
+}
+
+.QuantityIncreaseButton,
+.QuantityDecreaseButton,
+.RemoveItemButton {
+	color: red;
+	width: 20px;
+	aspect-ratio: 1/1;
+	border-radius: 50%;
+	border: none;
+	cursor: pointer;
+	margin: 0 5px;
+	/* Add margin for spacing */
+}
