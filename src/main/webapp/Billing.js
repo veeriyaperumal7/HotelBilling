@@ -18,8 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 	function addItemToBillingTable(itemName, itemPrice,dishId) {
-		//var existingRow = findExistingRow(itemName);
-		
+		var existingRow = findExistingRow(itemName);
 		var existingRow = null;
 		if (existingRow == null) {
 			// Create a new row in the billing table

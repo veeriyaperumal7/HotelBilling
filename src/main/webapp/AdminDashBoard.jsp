@@ -64,7 +64,7 @@ if (!cookieFound) {
             <div class="menuBlock">
                 <ul>
                     <li><a href="Billing.jsp">Billing</a></li>
-                     <li><a href="CancelBill.jsp">BillBill</a></li>
+                     <li><a href="CancelBill.jsp">Bill Cancel</a></li>
                     <li><a href="#">Employee</a></li>
                     <li><a href="#">Product</a></li>
                     <li><a href="#">Report</a></li>
